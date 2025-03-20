@@ -7,7 +7,8 @@ public class Coordenada{
     //Constructor, initialize x, y attributes to zero
     public Coordenada(){
         //fill in the code here
-        
+        this.x = 0;
+        this.y = 0;
     }
     //Constructor 
     public Coordenada(double x, double y){
@@ -18,6 +19,7 @@ public class Coordenada{
     //Constructor 
     public Coordenada(Coordenada c){
         //fill in the code here
+        this(c.x, c.y);
     }
     //métodos setter
     void setX(double x){
@@ -42,14 +44,16 @@ public class Coordenada{
     //método de instancia que calcula la distancia euclidiana
     double distancia(Coordenada c){
         // fill in the code here
-        
+       
     }
     //método de clase que calcula la distancia euclidiana
     static double distancia(Coordenada c1, Coordenada c2){
         // fill in the code here 
+
     }
     //método que devuelve los valores de una coordenada en determinado formato
-    String toString(){
+    public String toString(){
         // fill in the code here
+        return "Coordenada X: " + this.x + "Coordenada Y: " + this.y + "\n" + "La cordenada es: " + "(" + this.x + this.y + ")";  
     }
 }

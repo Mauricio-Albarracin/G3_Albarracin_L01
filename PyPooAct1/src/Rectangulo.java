@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class Rectangulo {
     private Coordenada esquina1;
     private Coordenada esquina2;
@@ -31,6 +31,6 @@ public class Rectangulo {
 
     public String toString(){
         // fill in the code here 
-        
+        return "Esquina 1: " + this.esquina1 + "\n" + "Esquina 2: " + this.esquina2;
     }
 }
