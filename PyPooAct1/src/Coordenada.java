@@ -1,4 +1,4 @@
-import java.util.*;
+//import java.util.*;
 
 public class Coordenada{
     private double x;
@@ -19,7 +19,7 @@ public class Coordenada{
     //Constructor 
     public Coordenada(Coordenada c){
         //fill in the code here
-        this(c.x, c.y);
+        this(c.x, c.y);      
     }
     //métodos setter
     void setX(double x){
@@ -44,12 +44,12 @@ public class Coordenada{
     //método de instancia que calcula la distancia euclidiana
     double distancia(Coordenada c){
         // fill in the code here
-       
+       return Math.sqrt(Math.pow(this.x - c.x, 2) + Math.pow(this.y - c.y, 2));
     }
     //método de clase que calcula la distancia euclidiana
     static double distancia(Coordenada c1, Coordenada c2){
         // fill in the code here 
-
+        return Math.sqrt(Math.pow(c2.x - c1.x, 2) + Math.pow(c2.y - c1.y, 2));
     }
     //método que devuelve los valores de una coordenada en determinado formato
     public String toString(){
