@@ -1,5 +1,4 @@
 //import java.util.*;
-
 public class Coordenada{
     private double x;
     private double y;
@@ -54,6 +53,6 @@ public class Coordenada{
     //método que devuelve los valores de una coordenada en determinado formato
     public String toString(){
         // fill in the code here
-        return "Coordenada X: " + this.x + "Coordenada Y: " + this.y + "\n" + "La cordenada es: " + "(" + this.x + this.y + ")";  
+        return "( " + this.x + ", " + this.y + ")";
     }
 }
